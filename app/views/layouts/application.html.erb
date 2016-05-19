@@ -2,9 +2,16 @@
 <html>
 <head>
   <title>Groupshalex</title>
+  <!-- the following code is for internet explorer  -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"
+    type="text/javascript"></script>
+  <![endif]-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- the following code is to make it mobile and ipad friendly depending on the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 
