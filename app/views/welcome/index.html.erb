@@ -176,16 +176,18 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- don't need to require this because all the jquery files are already compiled and loaded with rails when you do rails s (javascript_include_tag)-->
+    <!-- <script src="js/jquery.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- don't need to require this because all the jquery files are already compiled and loaded with rails when you do rails s (javascript_include_tag)-->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 
     <!-- Script to Activate the Carousel -->
-    <script>
+    <!-- included this in application.js file, because you don't want to include these scripts in views -->
+    
+    <!-- <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    </script>
-
-
+    </script> -->
