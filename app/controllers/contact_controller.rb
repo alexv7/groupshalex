@@ -5,9 +5,6 @@ class ContactController < ApplicationController
   def contact_us
   end
 
-  def new
-  end
-
   def create
     @contact = Contact.new(contact_params)
     respond_to do |format|
