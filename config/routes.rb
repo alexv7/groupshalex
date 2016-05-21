@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'welcome/about', as: 'about'
   get 'welcome/services', as: 'services'
-  get 'welcome/contact', as: 'contact'
+  get 'contact/contact_us', as: 'contact'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
