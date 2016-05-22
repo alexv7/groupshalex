@@ -23,7 +23,7 @@
                     <li class="<%= is_active?('/contact/contact_us') %>">
                         <%= link_to "Contact", contact_path %>
                     </li>
-                    <li class="dropdown">
+                    <li class="<%= is_portfolio_active?%>">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="<%= is_active?('/welcome/portfolio1col') %>">
@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="<%= is_blog_active?%>">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="<%= is_active?('/welcome/bloghome1') %>">
@@ -57,7 +57,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="<%= is_otherpages_active?%>">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="<%= is_active?('/welcome/fullwidth') %>">
