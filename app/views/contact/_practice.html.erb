@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-8">
       <h3>Send us a Message</h3>
-      <%= form_for :contact, html: { id: "contactForm", name: "sentMessage", novalidate: "novalidate" } do |f| %>
+      <%= form_for :contact, url: contact_create_path, html: { id: "contactForm", name: "sentMessage", novalidate: "novalidate" } do |f| %>
         <div class="control-group form-group">
           <div class="controls">
             <%= f.label :name, "Full Name:"%>
