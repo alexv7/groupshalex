@@ -14,66 +14,66 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="<%= is_active?('/welcome/about') %>">
                         <%= link_to "About", about_path %>
                     </li>
-                    <li>
+                    <li class="<%= is_active?('/welcome/services') %>">
                         <%= link_to "Services", services_path %>
                     </li>
-                    <li>
+                    <li class="<%= is_active?('/contact/contact_us') %>">
                         <%= link_to "Contact", contact_path %>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            <li class="<%= is_active?('/welcome/portfolio1col') %>">
+                              <%= link_to "1 Column Portfolio", welcome_portfolio1col_path %>
                             </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            <li class="<%= is_active?('/welcome/portfolio2col') %>">
+                              <%= link_to "2 Column Portfolio", welcome_portfolio2col_path %>
                             </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            <li class="<%= is_active?('/welcome/portfolio3col') %>">
+                              <%= link_to "3 Column Portfolio", welcome_portfolio3col_path %>
                             </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            <li class="<%= is_active?('/welcome/portfolio4col') %>">
+                              <%= link_to "4 Column Portfolio", welcome_portfolio4col_path  %>
                             </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            <li class="<%= is_active?('/welcome/portfolioitem') %>">
+                              <%= link_to "Single Portfolio", welcome_portfolioitem_path %>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                            <li class="<%= is_active?('/welcome/bloghome1') %>">
+                              <%= link_to "Blog Home 1", welcome_bloghome1_path %>
                             </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
+                            <li class="<%= is_active?('/welcome/bloghome2') %>">
+                              <%= link_to "Blog Home 2", welcome_bloghome2_path %>
                             </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
+                            <li class="<%= is_active?('/welcome/blogpost') %>">
+                              <%= link_to "Blog Post", welcome_blogpost_path %>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
+                            <li class="<%= is_active?('/welcome/fullwidth') %>">
+                              <%= link_to "Full Width Page", welcome_fullwidth_path %>
                             </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
+                            <li class="<%= is_active?('/welcome/sidebar') %>">
+                              <%= link_to "Sidebar Page", welcome_sidebar_path %>
                             </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
+                            <li class="<%= is_active?('/welcome/faq') %>">
+                              <%= link_to "FAQ", welcome_faq_path %>
                             </li>
-                            <li>
+                            <li class="<%= is_active?('/welcome/p404') %>">
                                 <%= link_to '404', welcome_p404_path %>
                             </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
+                            <li class="<%= is_active?('/welcome/pricing') %>">
+                              <%= link_to "Pricing Table", welcome_pricing_path %>
                             </li>
                         </ul>
                     </li>

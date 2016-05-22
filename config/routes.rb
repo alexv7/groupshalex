@@ -16,6 +16,18 @@ Rails.application.routes.draw do
   post 'contact/create'
 
   get 'welcome/p404'
+  get 'welcome/portfolio1col'
+  get 'welcome/portfolio2col'
+  get 'welcome/portfolio3col'
+  get 'welcome/portfolio4col'
+  get 'welcome/portfolioitem'
+  get 'welcome/bloghome1'
+  get 'welcome/bloghome2'
+  get 'welcome/blogpost'
+  get 'welcome/sidebar'
+  get 'welcome/faq'
+  get 'welcome/pricing'
+  get 'welcome/fullwidth'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
