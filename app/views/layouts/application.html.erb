@@ -43,9 +43,17 @@
 <body>
 <%= render partial: "layouts/nav" %>
 
+<% if current_page?(welcome_index_path) %>
+  <%= render partial: "welcome/carousel" %>
+<% end %>
+
+<!-- Page Content -->
+<div class="container">
+
 <%= yield %>
 
 <%= render partial: "layouts/footer" %>
 
+</div>
 </body>
 </html>
