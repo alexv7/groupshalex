@@ -1,3 +1,16 @@
+<% if @contact.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      <%= pluralize(@contact.errors.count, "error") %> prohibited your message from being sent:
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">

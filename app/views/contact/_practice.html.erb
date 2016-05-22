@@ -1,7 +1,15 @@
+
+
+
+
 <div class="row">
   <div class="col-md-8">
       <h3>Send us a Message</h3>
       <%= form_for :contact, url: contact_create_path, html: { id: "contactForm", name: "sentMessage", novalidate: "novalidate" } do |f| %>
+
+      <!-- Removed errors that is usually here into top of page of contact_us for aesthetics -->
+
+
         <div class="control-group form-group">
           <div class="controls">
             <%= f.label :name, "Full Name:"%>
@@ -31,6 +39,8 @@
       <% end %>
   </div>
 </div>
+
+
 
 
         <!-- <div class="row">

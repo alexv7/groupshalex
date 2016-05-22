@@ -3,33 +3,34 @@ class ContactController < ApplicationController
   end
 
   def contact_us
+    @contact = Contact.new
   end
+
+  # def create
+  #   @contact = Contact.new(contact_params)
+  #   respond_to do |format|
+  #       if @contact.save
+  #         format.html { redirect_to contact_url, notice: 'this should work.' }
+  #         format.json { render :show, status: :created, location: @contact }
+  #       else
+  #         format.html { render :contact_us }
+  #         format.json { render json: @contact.errors, status: :unprocessable_entity }
+  #       end
+  #     end
+  # end
+
+
 
   def create
     @contact = Contact.new(contact_params)
-    respond_to do |format|
-        if @contact.save
-          format.html { redirect_to contact_url, notice: 'Contact was successfully created.' }
-          format.json { render :show, status: :created, location: @contact }
-        else
-          format.html { render :contact_us }
-          format.json { render json: @contact.errors, status: :unprocessable_entity }
-        end
-      end
+    if @contact.save
+      flash[:success] = "Thanks for contacting us, we will get in touch with you shortly." #bootstrap thing/flash notice
+      redirect_to contact_path
+    else
+      # flash[:danger] = "no good" #bootstrap thing/flash notice
+      render 'contact_us'
+    end
   end
-
-
-
-  # def create
-  #   contact = Contact.new(contact_params)
-  #   if contact.save
-  #     flash[:success] = "Message sent" #bootstrap thing/flash notice
-  #     contact = nil
-  #     redirect_to contact_path
-  #   else
-  #     render 'new'
-  #   end
-  # end
 
   private
 
