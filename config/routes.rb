@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   post 'contact/create'
 
+  get 'welcome/p404'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
