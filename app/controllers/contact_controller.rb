@@ -24,6 +24,7 @@ class ContactController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
+      ContactNotifier.requester(@contact).deliver
       flash[:success] = "Thanks for contacting us, we will get in touch with you shortly." #bootstrap thing/flash notice
       redirect_to contact_path
     else
