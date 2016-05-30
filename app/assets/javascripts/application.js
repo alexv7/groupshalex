@@ -25,3 +25,5 @@ $('.carousel').carousel({
 // }, function() {
 //     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
 // });
+
+// adding comment because i want to precompile assets before pushing it to heroku
