@@ -14,15 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-//= require_tree .
 
 $('.carousel').carousel({
     interval: 5000 //changes the speed
 })
 
 
-$('.navbar .dropdown').hover(function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-}, function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
-});
+// $('.navbar .dropdown').hover(function() {
+//     $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+// }, function() {
+//     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+// });
